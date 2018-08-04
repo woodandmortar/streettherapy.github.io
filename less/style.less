@@ -1,0 +1,109 @@
+@link: #898989;
+@transition: all 0.3s ease-in-out 0s;
+@linkhover: #fff;
+@iterations: 30;
+
+html {
+  font-family: 'Lato', sans-serif;
+  overflow: hidden;
+  body {
+    margin: 0;
+    padding: 0;
+    #copy {
+      position: absolute;
+      bottom: 0;
+      height: 40px;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 14px;
+      font-size: 10px;
+      font-weight: 400;
+      z-index: 999;
+      a {
+        color: @link;
+        text-decoration: none;
+        transition: @transition;
+        b {
+          font-weight: 700;
+        }
+        &:hover {
+          color: @linkhover
+        }
+      }
+    }
+    .mask {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      //background: rgba(0, 0, 0, 0..);
+      z-index: 1;
+      box-shadow: 0 0 300px #000 inset, 0 0 200px #000 inset, 0 0 100px #000 inset;
+    }
+    .wrap {
+      background: #fff url(https://ununsplash.imgix.net/photo-1428604467652-115d9d71a7f1?fit=crop&fm=jpg&h=2100&q=75&w=2800) no-repeat center center;
+      //background-size: cover;
+      color: #fff;
+      font-weight: 600;
+      height: 120%;
+      left: 0;
+      position: absolute;
+      text-align: center;
+      text-shadow: 5px 5px black;
+      top: 0;
+      width: 120%;
+    }
+    #intro {
+      top: 20%;
+      position: absolute;
+      z-index: 999;
+      font-size: 20px;
+      font-weight: 100;
+      text-align: center;
+      float: none;
+      display: block;
+      width: 100%;
+      color: #000;
+      cursor: default;
+      padding-top: 20px;
+      //text-shadow: 0 1px 0 #fff;
+      text-transform: uppercase;
+      a {
+        color: #000;
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 11px;
+        text-shadow: none;
+        margin-top: 40px;
+        display: block;
+      }
+      h1 {
+        margin: 0;
+        padding: 0;
+        color: #000;
+        font-weight: 100;
+        letter-spacing: 10px;
+        font-size: 120%;
+        b {
+          font-size: 260%;
+          letter-spacing: -0.4px;
+          font-weight: 700;
+          display: block;
+          overflow-y: hidden;
+          overflow-x: visible;
+          height: 45px;
+          line-height: 42px;
+          margin-top: 10px;
+          box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.1);
+        }
+      }
+      h2 {
+        margin: 10px 0 0 0;
+        padding: 0;
+        color: #000;
+        font-size: 80%;
+        font-weight: 300;
+      }
+    }
+  }
+}
